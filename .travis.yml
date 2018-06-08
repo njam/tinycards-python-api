@@ -1,6 +1,10 @@
 language: python
 python:
   - "3.6"
+env:
+  global:
+    - TINYCARDS_IDENTIFIER=njam-test
+    - TINYCARDS_PASSWORD=gRaVeATiod
 install:
   - pip install -e .
   - pip install pytest pytest-cov
